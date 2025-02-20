@@ -1,4 +1,4 @@
-<h2 align="left">Hi 👋! Hello, my name is Furkan, and I am a software developer with a focus on backend development, mobile app development, and web development. With a strong proficiency in technologies such as Python, JavaScript, Django, and React Native, I am committed to delivering high-quality, scalable, and efficient solutions that cater to the needs of diverse industries. I aim to create impactful digital products that optimize user experience and contribute to business success.</h2>
+<h3 align="left"><i>Hi 👋! Hello, my name is Furkan, and I am a software developer with a focus on backend development, mobile app development, and web development. With a strong proficiency in technologies such as Python, JavaScript, Django, and React Native, I am committed to delivering high-quality, scalable, and efficient solutions that cater to the needs of diverse industries. I aim to create impactful digital products that optimize user experience and contribute to business success.</i></h3>
 
 ###
 
