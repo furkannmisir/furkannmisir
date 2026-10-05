@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Tekdaş Otomotiv - Antalya Kepez ikinci el araç alım satım, takas ve araç portföyü." />
+  <meta name="theme-color" content="#111111" />
+  <title>Tekdaş Otomotiv | Antalya Kepez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#top" aria-label="Tekdaş Otomotiv ana sayfa">
+        <span class="brand-mark">T</span>
+        <span class="brand-copy"><strong>TEKDAŞ</strong><small>OTOMOTİV</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Ana menü">
+        <a href="#araclar">Araçlarımız</a>
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#hakkimizda">Hakkımızda</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+      <a class="nav-cta" href="https://tekdasotomotiv.sahibinden.com" target="_blank" rel="noopener">Sahibinden Mağazası</a>
+      <button class="menu-button" aria-label="Menüyü aç" aria-expanded="false">☰</button>
+    </div>
+    <div class="mobile-menu" hidden>
+      <a href="#araclar">Araçlarımız</a><a href="#hizmetler">Hizmetler</a><a href="#hakkimizda">Hakkımızda</a><a href="#iletisim">İletişim</a>
+      <a href="https://tekdasotomotiv.sahibinden.com" target="_blank" rel="noopener">Sahibinden Mağazası</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow hero-glow-a"></div><div class="hero-glow hero-glow-b"></div>
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">ANTALYA • KEPEZ</span>
+          <h1>Doğru aracı, <span>doğru yerden</span> alın.</h1>
+          <p>Tekdaş Otomotiv’de güncel araç portföyünü inceleyin, aracınızı değerlendirelim ve alım-satım sürecinizi hızlıca tamamlayın.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#araclar">Araçları İncele</a>
+            <a class="button button-ghost" href="https://tekdasotomotiv.sahibinden.com" target="_blank" rel="noopener">Sahibinden Mağazası ↗</a>
+          </div>
+          <div class="hero-stats">
+            <div><b id="vehicleCount">7</b><span>Güncel araç</span></div>
+            <div><b>Kepez</b><span>Antalya</span></div>
+            <div><b>Hızlı</b><span>İletişim</span></div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="plate">TEKDAŞ</div>
+          <div class="car-silhouette">
+            <div class="car-roof"></div><div class="car-body"></div><div class="wheel wheel-left"></div><div class="wheel wheel-right"></div>
+          </div>
+          <div class="hero-card hero-card-1"><span>GÜNCEL PORTFÖY</span><strong>7 Araç</strong></div>
+          <div class="hero-card hero-card-2"><span>DİREKT ERİŞİM</span><strong>Sahibinden</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="shell trust-grid">
+        <div><span>01</span><strong>Araç Alım & Satım</strong><small>Hızlı ve şeffaf süreç</small></div>
+        <div><span>02</span><strong>Takas Değerlendirme</strong><small>Aracınızı birlikte değerlendirelim</small></div>
+        <div><span>03</span><strong>Güncel Portföy</strong><small>Sahibinden mağazasıyla bağlantılı</small></div>
+        <div><span>04</span><strong>Kolay İletişim</strong><small>Telefon ve WhatsApp erişimi</small></div>
+      </div>
+    </section>
+
+    <section class="section" id="araclar">
+      <div class="shell">
+        <div class="section-head">
+          <div><span class="eyebrow dark">GÜNCEL PORTFÖY</span><h2>Araçlarımız</h2></div>
+          <p>Aşağıdaki araçlar Tekdaş Otomotiv Sahibinden mağazasında görüntülenen güncel ilanlardan derlenmiştir.</p>
+        </div>
+        <div class="filters">
+          <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Marka veya model ara..." /></label>
+          <select id="sortSelect" aria-label="Sıralama">
+            <option value="default">Önerilen sıralama</option>
+            <option value="priceAsc">Fiyat: Artan</option>
+            <option value="priceDesc">Fiyat: Azalan</option>
+          </select>
+        </div>
+        <div class="vehicle-grid" id="vehicleGrid"></div>
+        <div class="center-action"><a class="button button-dark" href="https://tekdasotomotiv.sahibinden.com" target="_blank" rel="noopener">Tüm ilanları Sahibinden'de gör ↗</a></div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="hizmetler">
+      <div class="shell">
+        <div class="section-head light"><div><span class="eyebrow">HİZMETLER</span><h2>Aracınız için doğru çözüm.</h2></div><p>Tekdaş Otomotiv; araç alım, satış ve takas süreçlerinde hızlı iletişim ve pratik yönlendirme sunar.</p></div>
+        <div class="service-grid">
+          <article><span>01</span><h3>Araç Satışı</h3><p>Portföyümüzdeki araçları inceleyin, güncel ilan detaylarına doğrudan Sahibinden mağazamızdan ulaşın.</p></article>
+          <article><span>02</span><h3>Aracınızı Satın</h3><p>Aracınızın temel bilgilerini bizimle paylaşın. Değerlendirme ve teklif süreci için hızlıca iletişime geçelim.</p></article>
+          <article><span>03</span><h3>Takas</h3><p>Mevcut aracınızı yeni aracınızla takas etmek için seçenekleri birlikte değerlendirelim.</p></article>
+          <article><span>04</span><h3>İlan & Araç Bilgisi</h3><p>İlgilendiğiniz aracın güncel durumu ve ilan detayları için bize veya Sahibinden mağazamıza ulaşın.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="hakkimizda">
+      <div class="shell about-grid">
+        <div class="about-visual"><div class="big-t">T</div><span>TEKDAŞ OTOMOTİV</span></div>
+        <div class="about-copy"><span class="eyebrow dark">HAKKIMIZDA</span><h2>Antalya Kepez’de otomobil alışverişine sade bir yaklaşım.</h2><p>Tekdaş Otomotiv’in web sitesi; güncel araç portföyünü kolayca inceleyebilmeniz, Sahibinden mağazasına tek tıkla ulaşabilmeniz ve iletişim kanallarına hızlı erişebilmeniz için tasarlandı.</p><p>İlan detayları, fiyatlar ve araçların güncel durumu için Sahibinden mağazamızdaki bilgileri esas alabilirsiniz.</p><a class="text-link" href="https://tekdasotomotiv.sahibinden.com" target="_blank" rel="noopener">Sahibinden mağazasını aç →</a></div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="shell cta-grid"><div><span class="eyebrow">ARACINIZI MI SATACAKSINIZ?</span><h2>Aracınızı birlikte değerlendirelim.</h2></div><div class="cta-actions"><a class="button button-primary needs-link" href="#" data-purpose="whatsapp">WhatsApp</a><a class="button button-ghost-light needs-link" href="#" data-purpose="phone">Hemen Ara</a></div></div>
+    </section>
+
+    <section class="section" id="iletisim">
+      <div class="shell contact-grid">
+        <div><span class="eyebrow dark">İLETİŞİM</span><h2>Tekdaş Otomotiv'e ulaşın.</h2><p class="contact-intro">Telefon, WhatsApp, adres ve harita bağlantıları gönderildiğinde bu alan doğrudan gerçek bilgilerle güncellenecek.</p>
+          <div class="contact-list">
+            <a href="#" class="needs-link" data-purpose="phone"><span>Telefon</span><strong>Bilgi eklenecek</strong></a>
+            <a href="#" class="needs-link" data-purpose="whatsapp"><span>WhatsApp</span><strong>Bağlantı eklenecek</strong></a>
+            <a href="#" class="needs-link" data-purpose="map"><span>Adres / Harita</span><strong>Google Maps linki eklenecek</strong></a>
+            <a href="https://tekdasotomotiv.sahibinden.com" target="_blank" rel="noopener"><span>Sahibinden</span><strong>tekdasotomotiv.sahibinden.com</strong></a>
+          </div>
+        </div>
+        <div class="map-placeholder"><div class="map-grid"></div><div class="pin">T</div><span>Google Maps konumu eklenecek</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="shell footer-grid"><div class="brand footer-brand"><span class="brand-mark">T</span><span class="brand-copy"><strong>TEKDAŞ</strong><small>OTOMOTİV</small></span></div><p>Antalya Kepez • İkinci el araç alım, satım ve takas</p><div class="footer-links"><a href="#araclar">Araçlar</a><a href="#hakkimizda">Hakkımızda</a><a href="#iletisim">İletişim</a></div></div><div class="shell footer-bottom">© 2026 Tekdaş Otomotiv. Tüm hakları saklıdır.</div></footer>
+
+  <a href="#" class="floating-wa needs-link" data-purpose="whatsapp" aria-label="WhatsApp">WA</a>
+  <script src="script.js"></script>
+</body>
+</html>
